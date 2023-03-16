@@ -2,3 +2,12 @@
   margin: 0;
   padding: 0;
 }
+
+body {
+  margin-top: 5%;
+}
+
+tbody {
+  max-height: 400px;
+  overflow: auto;
+}
