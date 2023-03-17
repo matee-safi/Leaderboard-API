@@ -380,7 +380,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "* {\n  margin: 0;\n  padding: 0;\n}\n\nbody {\n  margin-top: 5%;\n}\n\ntbody {\n  max-height: 400px;\n  overflow: auto;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "* {\n  margin: 0;\n  padding: 0;\n}\n\nbody {\n  margin-top: 5%;\n}\n\n.table-header {\n  display: flex;\n  width: 94%;\n  margin-left: 3%;\n  justify-content: space-between;\n}\n\nul {\n  display: flex;\n  flex-direction: column;\n  height: 250px;\n  max-height: 250px;\n  overflow: auto;\n  border: 1px solid #ced4da;\n  border-radius: 0.25rem;\n}\n\nli {\n  padding-left: 5px;\n  display: flex;\n  list-style: none;\n  font-size: large;\n}\n\nul > li:nth-of-type(odd) {\n  background-color: rgb(223, 223, 228);\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -532,7 +532,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-const list = document.querySelector('tbody');
+const list = document.querySelector('.table');
 
 const render = async () => {
   try {
@@ -541,11 +541,8 @@ const render = async () => {
 
     list.innerHTML = '';
     for (let i = 0; i < data.result.length; i += 1) {
-      const listItem = document.createElement('tr');
-      listItem.innerHTML = `
-            <td>${data.result[i].user}</td>
-            <td>${data.result[i].score}</td>
-        `;
+      const listItem = document.createElement('li');
+      listItem.innerHTML = `${data.result[i].user}: ${data.result[i].score}`;
       list.appendChild(listItem);
     }
   } catch (error) {
