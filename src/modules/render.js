@@ -1,4 +1,4 @@
-const list = document.querySelector('tbody');
+const list = document.querySelector('.table');
 
 const render = async () => {
   try {
@@ -7,11 +7,8 @@ const render = async () => {
 
     list.innerHTML = '';
     for (let i = 0; i < data.result.length; i += 1) {
-      const listItem = document.createElement('tr');
-      listItem.innerHTML = `
-            <td>${data.result[i].user}</td>
-            <td>${data.result[i].score}</td>
-        `;
+      const listItem = document.createElement('li');
+      listItem.innerHTML = `${data.result[i].user}: ${data.result[i].score}`;
       list.appendChild(listItem);
     }
   } catch (error) {

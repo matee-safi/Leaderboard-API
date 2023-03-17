@@ -12,27 +12,18 @@
         <div class="row">
             <div class="col pt-5">
                 <div class="row text-center mb-4">
-                    <div class="col">
-                        <h3 class="fs-3">Recent scores</h3>
+                    <div class="table-header">
+                        <h2 class="fs-3">Recent scores</h2><button id="refresh-btn" class="btn btn-primary" type="button">Refresh</button>
                     </div>
-                    <div class="col m-auto"><button id="refresh-btn" class="btn btn-primary" type="button">Refresh</button></div>
                 </div>
                 <div class="table-responsive">
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th>Name</th>
-                                <th>Score</th>
-                            </tr>
-                        </thead>
-                        <tbody class="table-striped">
-
-                        </tbody>
-                    </table>
+                    <ul class="table">
+                        
+                    </ul>
                 </div>
             </div>
             <div class="col p-5 text-center">
-                <h3 class="mb-4 fs-3">Add your score</h3>
+                <h2 class="mb-4 fs-3">Add your score</h2>
                 <form><input id="name-input" class="form-control mb-4" type="text" placeholder="Your name" required/><input id="score-input" class="d-flex w-100 form-control mb-4" type="number" placeholder="Your score" required/><button id="submit-btn" class="btn btn-primary float-right" type="submit">Button</button></form>
             </div>
         </div>
