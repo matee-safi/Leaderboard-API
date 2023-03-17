@@ -37,21 +37,21 @@
 > 
 
 <details>
-  <summary>Client</summary>
+  <summary>HTML</summary>
   <ul>
     <li><a href=""></a></li>
   </ul>
 </details>
 
 <details>
-  <summary>Server</summary>
+  <summary>BootStrap</summary>
   <ul>
     <li><a href=""></a></li>
   </ul>
 </details>
 
 <details>
-<summary>Database</summary>
+<summary>JS</summary>
   <ul>
     <li><a href=""></a></li>
   </ul>
@@ -69,7 +69,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Not deployed
+<a href="https://matee-safi.github.io/Leaderboard-API/dist/">View page</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -77,19 +77,19 @@
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> Open index.html
 
 ### Prerequisites
 
 In order to run this project you need:
 
-A browser
+- A browser
+- node js
 
 ### Setup
 
 Clone this repository to your desired folder:
 
-git clone https://github.com/matee-safi/webpack-demo.git
+git clone https://github.com/matee-safi/Leaderboard-API.git
 
 ### Install
 
@@ -101,11 +101,11 @@ npm i
 
 To run the project, execute the following command:
 
-Directly open index.html
+npm run start
 
 ### Run tests
 
-No tests
+> No tests
 
 ### Deployment
 
@@ -141,7 +141,7 @@ Get a hosting website and give all of the github files
 
 ## 🤝 Contributing <a name="contributing"></a>
 
-You can contribute to this project by writing an issue <a href="https://github.com/matee-safi/webpack-demo/issues" >here</a>
+You can contribute to this project by writing an issue <a href="https://github.com/matee-safi/Leaderboard-API/issues/new/choose" >here</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -149,7 +149,7 @@ You can contribute to this project by writing an issue <a href="https://github.c
 
 ## ⭐️ Show your support <a name="support"></a>
 
-If you like this project please leave a 
+If you like this project please leave a.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -157,7 +157,7 @@ If you like this project please leave a
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank Microverse and youtube for help
+I would like to thank Microverse and TheNetNinja for the learning materials.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
